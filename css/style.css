@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-webfont.woff2') format('woff2'),
+         url('../fonts/miso-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+	font: 300 20px/1.3 Lato, sans-serif;
+	background: #fdde7e;
+	color: #333333;
+
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-price__column{
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+
+}
+.ba-price__block{
+	display: flex;
+	width: 33%;
+	background: #fff;
+	border-radius: 4px;
+	margin-right: 30px;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	padding: 22px 75px;
+	text-align: center;
+	box-shadow: 3px 3px 3px #333;
+
+}
+.ba-price__block + .ba-price__block{
+	margin-right: 30px;
+}
+.ba-price__block:nth-last-child(1){
+	margin-right: 0;
+}
+.ba-price__block:nth-child(2){
+	padding: 30px 75px;
+}
+.ba-price{
+	font: 700 70px/1.3 Miso, sans-serif;
+	color: #02995b;
+	padding-bottom: 5px;
+}
+.ba-price__block:nth-child(2) img{
+	padding: 23px 0 23px 0;
+}
+.ba-cup__name{
+	font: 400 56px/1.3 Miso, sans-serif;
+	margin: 0;
+	padding: 20px 0 10px 0;
+
+}
+.ba-price__block p{
+	margin:0;
+}
